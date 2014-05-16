@@ -12,15 +12,17 @@
 
 			#notes {
 				font-size: 24px;
-				width: 640px;
-				margin-top: 5px;
+				width: 600px;
+				margin-top: 10px;
 				clear: left;
+				height: 626px;
+				overflow-y: auto;
 			}
 
 			#wrap-current-slide {
-				width: 640px;
-				height: 512px;
-				float: left;
+				width: 448px;
+				height: 358px;
+				float: right;
 				overflow: hidden;
 			}
 
@@ -35,19 +37,20 @@
 					 -o-transform-origin: 0 0;
 						transform-origin: 0 0;
 
-				-webkit-transform: scale(0.5);
-				   -moz-transform: scale(0.5);
-					-ms-transform: scale(0.5);
-					 -o-transform: scale(0.5);
-						transform: scale(0.5);
+				-webkit-transform: scale(0.35);
+				   -moz-transform: scale(0.35);
+					-ms-transform: scale(0.35);
+					 -o-transform: scale(0.35);
+						transform: scale(0.35);
 			}
 
 			#wrap-next-slide {
 				width: 448px;
 				height: 358px;
-				float: left;
+				float: right;
 				margin: 0 0 0 10px;
 				overflow: hidden;
+				clear: both;
 			}
 
 			#next-slide {
@@ -100,7 +103,6 @@
 			.time {
 				width: 448px;
 				margin: 30px 0 0 10px;
-				float: left;
 				text-align: center;
 				opacity: 0;
 
@@ -147,7 +149,7 @@
 		</script>
 
 		<div id="wrap-current-slide" class="slides">
-			<script>document.write( '<iframe width="1280" height="1024" id="current-slide" src="'+ notesCurrentSlideURL +'"></iframe>' );</script>
+			<script>document.write( '<iframe width="640" height="512" id="current-slide" src="'+ notesCurrentSlideURL +'"></iframe>' );</script>
 		</div>
 
 		<div id="wrap-next-slide" class="slides">
