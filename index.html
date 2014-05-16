@@ -115,7 +115,7 @@
 
             <p>Four Kitchens and Lullabot composed the "Drupal crack team"; both companies provided consultants, Drupal expertise, and developer resources.</p>
 
-            <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC.</p>
+            <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC Digital.</p>
           </aside>
         </section>
 
@@ -145,6 +145,82 @@
         <section>
           <blockquote>To succeed, we need a non-blocking technical architecture.</blockquote>
         </section>
+
+        <section>
+          <p>In a way, it's like winning at "Lip Synch Battle"</p>
+          TODO: Need images from lip synch battle bit.
+
+          <ul>
+            <li>Be flexible</li>
+            <li>Have some bits prepared</li>
+            <li>You won't know what is coming, but you can practice how you will react</li>
+          </ul>
+
+          <aside class="notes">
+            <ul>
+               <li>allow independent itteration on all layers of the site</li>
+               <li>Play to our strengths - reduce and simplify developer dependencies</li>
+               <li>Foster a mindset and a language not a prescription</li>
+             </ul>
+         </aside>
+        </section>
+
+        <section>
+          <p>The two biggest components of this approach are:</p>
+          <ul>
+            <li>A <abbr>COPE</abbr> Decoupled technology stack</li>
+            <li>Semantic content model</li>
+          </ul>
+          <aside class="notes">
+             <p>A decoupled app &amp; web front end with a services based Drupal API layer.</p>
+             <p>And an abstracted semantic content model that supported great itteration.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>What was that now? Semantic whatsit?</h2>
+          <p>We started with the API thinking that providing outs would unblock the app and front end teams</p>
+          <p>However that led to a lot of 1-1 endpoints - a non-agnostic API approach</p>
+          <aside class="notes">
+             <p>I'll explain in a moment but let's start with how we got there.</p>
+             <p>We started working on the API first but we quickly observed we were headed down a prescriptive and unsustainable path. Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>FAIL BOAT</h2>
+          <aside class="notes">
+            <p>This was pretty clearly not going to help us suceed.</p>
+            <ol>
+              <li>Front end and back ends are very coupled.</li>
+              <li>Content model does not have the flexibility show producers need</li>
+          </aside>
+        </section>
+
+        <section>
+          <h2>So... what is Semantic Content modeling?</h2>
+          <p>Content structures that resemble real-life elements of your business</p>
+          <p>For the Tonight Show that meant putting the content resources together like the show.</p>
+          <ul>
+             <li>Segments</li>
+             <li>Bits</li>
+             <li>Jokes</li>
+             <li>Guests<li>
+             <li>Challenges</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Benefits of Semantic Content Modeling: A Shared Meaningful Language</h2>
+          <aside>
+            <p>Gave all teams - developers, q/a, editorial a shared meaningful language that was native both to the show and the web stack.</p>
+            <p>Make sense editorially for the long term</p>
+            <p>Provided a clearer editorial workflow</p>
+          </aside>
+        <section>
+
+
+
 
         <section>
           <h2 class="static-title">Side</h2>
