@@ -173,7 +173,9 @@
         </section>
 
         <section>
-          <p>In a way, it's like winning at "Lip Synch Battle"</p>
+          <h2 class="static-title">In a way, it's like winning at "Lip Synch Battle"</h2>
+          <p>TODO: Need Rules of Lip Synch Battle</p>
+
           TODO: Need images from lip synch battle bit.
 
           <ul>
@@ -184,7 +186,7 @@
 
           <aside class="notes">
             <ul>
-               <li>allow independent itteration on all layers of the site</li>
+               <li>Allow independent itteration on all layers of the site</li>
                <li>Play to our strengths - reduce and simplify developer dependencies</li>
                <li>Foster a mindset and a language not a prescription</li>
              </ul>
@@ -192,7 +194,8 @@
         </section>
 
         <section>
-          <p>The two biggest components of this approach are:</p>
+        <h2 class="static-title">Our Non-Blocking Approach</h2>
+          <p>The two biggest components are:</p>
           <ul>
             <li>A <abbr>COPE</abbr> Decoupled technology stack</li>
             <li>Semantic content model</li>
@@ -204,17 +207,20 @@
         </section>
 
         <section>
-          <h2>What was that now? Semantic whatsit?</h2>
+          <h2 class="static-title">What was that now? Semantic whatsit?</h2>
           <p>We started with the API thinking that providing outs would unblock the app and front end teams</p>
           <p>However that led to a lot of 1-1 endpoints - a non-agnostic API approach</p>
           <aside class="notes">
              <p>I'll explain in a moment but let's start with how we got there.</p>
-             <p>We started working on the API first but we quickly observed we were headed down a prescriptive and unsustainable path. Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
+             <p>We started working on the API first but we quickly observed we were headed down a prescriptive and unsustainable path.</p>
+             <p>Andrew, what were some of the problems we saw rear their head at that point?</p>
+             <p>Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
           </aside>
         </section>
 
         <section>
-          <h2>FAIL BOAT</h2>
+          <h2 class="static-title">FAIL BOAT</h2>
+
           <aside class="notes">
             <p>This was pretty clearly not going to help us suceed.</p>
             <ol>
@@ -224,29 +230,94 @@
         </section>
 
         <section>
-          <h2>So... what is Semantic Content modeling?</h2>
+          <h2 class="static-title">So... what is Semantic Content modeling?</h2>
           <p>Content structures that resemble real-life elements of your business</p>
           <p>For the Tonight Show that meant putting the content resources together like the show.</p>
-          <ul>
-             <li>Segments</li>
-             <li>Bits</li>
-             <li>Jokes</li>
-             <li>Guests<li>
-             <li>Challenges</li>
-          </ul>
+          <!--- toonses? -->
+          <aside class="notes">
+            <p>It can be easy in Drupal to have a page centric content model, starting from the pages or sections you want available and that then drives the fields, content and their relations</p>
+            <p>Who does that put in the driver's seat?</p>
+            <p>Your site is driving your content, wouldn't you prefer that your content drives the site?</p>
+          </aside>
         </section>
 
         <section>
-          <h2>Benefits of Semantic Content Modeling: A Shared Meaningful Language</h2>
+          <h2 class="static-title">Thinking Semantically: A joke is the smallest atomic unit of funny.</h2>
+          <p>Build from the smallest unique component of the show</p>
+          <!--- TODO: Diagram of show and components-->
+          <div class="col-two index-list">
+            <div class="col left centered">
+              <p><strong>Show elements:</strong></p>
+              <ul>
+                <li>Joke</li>
+                <li>Bit</li>
+                <li>Segment</li>
+              </ul>
+            </div>
+            <div class="col right centered">
+              <p><strong>Other show elements:</strong></p>
+              <ul>
+                <li>Guests</li>
+                <li>Challenges</li>
+                <li>Games</li>
+              </ul>
+            </div>
+          </div>
+
+          <aside class="notes">
+            <p>Eddie from NBC Digital had this great insight to really push for the idea that the smallest meaningful component of the late show, is the joke, and that we could build from there.</p>
+            <p>It coincided perfectly with the mission of the site, the apps, and the property, to provide shareable moments that viewers, fans and their networks can experience the best moments time and again.</p>
+          </aside>
+        </section>
+
+
+        <section>
+           <h2 class="static-title">Semantic but Abstract - why?</h2>
+           <p>Addresses volatility in trends and interests - gives you flexibility</p>
+           <p>Connects the dots between performance and production</p>
+        </section>
+
+        <section>
+          <h2>Benefits of Semantic Content Modeling:</h2>
+          <ul>
+            <li>Shared Language for all teams</li>
+            <li>Sustainable</li>
+            <li>Looked like any other editorial process at NBC Digital</li>
+            <li>Content is finally driving</li>
+          </ul>
           <aside>
             <p>Gave all teams - developers, q/a, editorial a shared meaningful language that was native both to the show and the web stack.</p>
             <p>Make sense editorially for the long term</p>
-            <p>Provided a clearer editorial workflow</p>
+            <p>Provided a familiar Drupal editorial process with a non-page based content paradigm</p>
+            <p>AND... now you've placed content in the driver's seat, your content is driving your properties not the other way around - this gives </p>
           </aside>
         <section>
 
+        <section>
+          <h2>In Practice</h2>
+          TODO: Show content types and relations - resources
+        </section>
 
 
+        <section>
+          <h2 class="static-title">The timeline, the approach hid something surprising, something unusual...</h2>
+          <div class="col-three">
+            <div class="col first centered">
+              <p>Approach</p>
+            </div>
+            <div class="col middle centered">
+              <p>Synergy</p>
+            </div>
+            <div class="col last centered">
+              <p>
+                <p>Deadline</p>
+              </p>
+            </div>
+          </div>
+          <aside class="notes">
+            <p>The deadline pushed us to decoupling, decoupling gave us a strongly asynchronous workflow, the asynchronous workflow let us complete the site more quickly.</p>
+          </aside>
+        </section>
 
         <section>
           <h2 class="static-title">Side</h2>
