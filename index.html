@@ -113,9 +113,47 @@
             <p>NBC Digital; they're responsible for anything and everything digital for the NBC television brand. It's their job to build and maintain whatever online tools shows need to be effective, competitive, and engaging.</p>
             <p>CP+B (TODO: Full name?); the primary contractor for TSJF, they were responsible for designing and building both the web app and the mobile apps.</p>
 
-            <p>Four Kitchens and Lullabot composed the "Drupal crack team"; both companies provided consultants, Drupal expertise, and developer resources.</p>
+            <p>Four Kitchens and Lullabot helped round out the Drupal team, and eventually became the leads on it (other work on nbc.com); both companies provided consultants, Drupal expertise, and developer resources.</p>
 
             <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC Digital.</p>
+          </aside>
+        </section>
+
+        <section>
+          <p>TODO: This needs to not just be a list.</p>
+          <ul>
+            <li>CP+B</li>
+            <li>NBC</li>
+            <li>Four Kitchens</li>
+            <li>Lullabot</li>
+          </ul>
+
+          <aside class="notes">
+            <p>Not only did we have a complex site to build, with a tight timeline, we had to with with a distributed team in both place and time. The sun never set on the Tonight Show team.</p>
+          </aside>
+        </section>
+
+        <section>
+          TODO: Insert map of where everyone was. Talk about the TZ range (remember QA).
+
+          <aside class="notes">
+            <p>We have all of these team members, with such variance between them. I remember thinking "if this project is going to launch with anywhere near what they want, we'll really need to structure the architecture itself to be non-blocking."</p>
+          </aside>
+        </section>
+
+        <section>
+          <aside class="notes">
+            <p>Our first task was to define the systems that needed to be built, and who owned what.</p>
+            <p>Then, we could map each system to each team's primary expertise and give them ownership over the product.</p>
+            <p>We started from the source of content (to us) and moved through each system all the way to the end user.</p>
+            <ul>
+              <li>All non-video content from the show's producers into Publisher 7.</li>
+              <li>Video content from MPX, curated by producers in P7.</li>
+              <li>P7 would be owned by the "Drupal crack team"; 4K, Lullabot</li>
+              <li>The API design was handled by the two Drupal architects and the lead CP+B architect.</li>
+              <li>Front end and apps handled by CP+B.</li>
+              <li>Product was owned by NBC, so they handled QA from an acceptance standpoint. TODO?</li>
+            </ul>
           </aside>
         </section>
 
@@ -128,18 +166,6 @@
             <li>"Drupal crack team": 4K, Lullabot, +1 CP+B, occasional NBC (though worked on nbc.com)</li>
             <li>Video integration expert: Lullabot (Matt K)</li>
           </ul>
-
-          <aside class="notes">
-            <p>Not only did we have a complex site to build, with a tight timeline, we had to with with a distributed team in both place and time.</p>
-          </aside>
-        </section>
-
-        <section>
-          TODO: Insert map of where everyone was. Talk about the TZ range (remember QA).
-
-          <aside class="notes">
-            <p>We have all of these team members, with such variance between them. I remember thinking "if this project is going to launch with anywhere near what they want, we'll really need to structure the architecture itself to be non-blocking."</p>
-          </aside>
         </section>
 
         <section>
