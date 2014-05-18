@@ -53,6 +53,11 @@ body {
 /*********************************************
  * HEADERS
  *********************************************/
+@font-face {
+  font-family: 'UniversLTW01-49LightUlt';
+  src: url('/font/Univers49.woff?') format('woff');
+}
+
 .reveal h1,
 .reveal h2,
 .reveal h3,
