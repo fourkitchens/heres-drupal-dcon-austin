@@ -297,7 +297,7 @@
         </section>
 
         <section>
-          <h2>Benefits of Semantic Content Modeling:</h2>
+          <h2 class="static-title">Benefits of Semantic Content Modeling:</h2>
           <ul>
             <li>Shared Language for all teams</li>
             <li>Sustainable</li>
@@ -308,12 +308,12 @@
             <p>Gave all teams - developers, q/a, editorial a shared meaningful language that was native both to the show and the web stack.</p>
             <p>Make sense editorially for the long term</p>
             <p>Provided a familiar Drupal editorial process with a non-page based content paradigm</p>
-            <p>AND... now you've placed content in the driver's seat, your content is driving your properties not the other way around - this gives </p>
+            <p>AND... now you've placed content in the driver's seat, your content is driving your properties not the other way around</p>
           </aside>
         </section>
 
         <section>
-          <h2>In Practice</h2>
+          <h2 class="static-title">In Practice</h2>
           TODO: Show content types and relations - resources
         </section>
 
@@ -334,6 +334,32 @@
             <p>The deadline pushed us to decoupling, decoupling gave us a strongly asynchronous workflow, the asynchronous workflow let us complete the site more quickly.</p>
           </aside>
         </section>
+
+        <section>
+          <h2 class="static-title">The Second Part of our Non-blocking approach: The API</h2>
+          <p>At its core: An OOP API built on Drupal services.</p>
+          <p>BUT...it was more than that - the product was the design as much as it was the API</p>
+          <p>The System is the Architect</p>
+
+          <aside class="notes">
+            <p>The API was was an abstracted PHP OOP wrapper Drupal services, asoution that leverages many drupal patterns.</p>
+            <p>The design of the API was the product it was a codex and approach that allowed us to work multi-threaded.  It was like a commitment of behavior.</p>
+            <p>A versionless, backwards compatible, hyrdra styled development approach - itterative and dependency free.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="static-title">Why a services wrapper?</h2>
+          <p>Services has views and site building integration - that might seem like a more speedy solution.</p>
+          <p>BUT</p>
+          <p>Features isn't super great (TM) for asynchronous review, nor is our semantic model particularly easy to construct with views, and our expertise and resourcing gave us access to strong PHP chops</p>
+
+          <aside class="notes">
+
+          </aside>
+        </section>
+
+
 
         <section>
           <h2 class="static-title">Side</h2>
