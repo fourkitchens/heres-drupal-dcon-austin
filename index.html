@@ -318,6 +318,68 @@
         </section>
 
         <section>
+          <h2 class="static-title">The Second Part of our Non-blocking approach: The API</h2>
+          <p>Establish Ins/Outs - essential to non-blocking multi-platform development</p>
+          <p>Could leverage some pre-exisiting API work</p>
+          <p>Provide consitent editorial/backend experience</p>
+          <p>Decouple backend Drupal concerns from speed dependent front-end itterations and deployment</p>
+
+          <aside class="notes">
+            <p>Multi-platform, multi-team development needed to happen independently</p>
+            <p>Hopefully save time by adopting some existing API work.</p>
+            <p>Provide continuity for editorial and support teams at NBC Digital.</p>
+            <p>Develop with agility, respond to volatility, free front-end up for frequent updates.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="static-title">More than meets the API</h2>
+          <p>At its core: An OOP API built on Drupal services.</p>
+          <p>BUT...it was more than that - the product was the design as much as it was the API</p>
+          <p>The System is the Architect</p>
+
+          <aside class="notes">
+            <p>The design of the API was the product it was a codex and approach that allowed us to work multi-threaded.  It was like a commitment of behavior.</p>
+            <p>TODO: Find good API resources state our principles.</p>
+            <p>A versionless, backwards compatible, hyrdra styled development approach - itterative and dependency free. The API was often feature forward of the app and site releases.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="static-title">API Concerns</h2>
+          TODO: Diagram the concerns and capabilities of Services Wrapper - generally describe what it was able to do.
+          <aside class="notes">
+            <p>Here are the basic concerns of our API</p>
+            <p>Provided a highly customizable way to select indvidual and groups of semantic content for endpoints</p>
+            <p>Established caching, content permissions, and responsive ready resource delivery patterns in a familiar way to the enterprise (in use on one other property)</p>
+            <p>Leveraged DBTNG dynamic query assembly, several layers of caching (entity and custom), and services classes.</p>
+        </section>
+
+        <section>
+          <h2 class="static-title">That's no API, it's a PHPOOPAPI</h2>
+          <p>Let us utilize strong PHP OOP resources</p>
+          <p>OOP inheritence let us shift Drupalisms lower down and simplify implementing classes</p>
+          <p>Simpler implementations allowed quicker and cleaner review of asynchronous work.</p>
+
+          <aside class="notes">
+            <p>Even within a services based API solution - there are options - why not site build for speed? - It may be fast to get out there but it is not fast to itterate on asynchronously.</p>
+            <p>OOP code was more sensible than features or views code - easy to see what had been changed while teams worked around the clock and easy to extend cleanly and consistently</p>
+            <p>Using a heavliy PHP OOP solution let us leverage the available expertise and resources in a sustainable way - still deliver a familiar editorial and backend solution.</p>
+            <p>Solve for the obtuse in one place - keep drupalisms low to the ground </p>
+          </aside>
+        </section>
+
+        <section>
+          <h2 class="static-title">The API In practice.</h2>
+          <p>The API was structured similarly so that calls could be placed in reliable ways.</p>
+          <p>An API call looks something like this:</p>
+          TODO: API call
+          <p>And returns something like this:</p>
+          TODO: API results
+        </section>
+
+
+        <section>
           <h2 class="static-title">The timeline, the approach hid something surprising, something unusual...</h2>
           <div class="col-three">
             <div class="col first centered">
@@ -334,31 +396,6 @@
             <p>The deadline pushed us to decoupling, decoupling gave us a strongly asynchronous workflow, the asynchronous workflow let us complete the site more quickly.</p>
           </aside>
         </section>
-
-        <section>
-          <h2 class="static-title">The Second Part of our Non-blocking approach: The API</h2>
-          <p>At its core: An OOP API built on Drupal services.</p>
-          <p>BUT...it was more than that - the product was the design as much as it was the API</p>
-          <p>The System is the Architect</p>
-
-          <aside class="notes">
-            <p>The API was was an abstracted PHP OOP wrapper Drupal services, asoution that leverages many drupal patterns.</p>
-            <p>The design of the API was the product it was a codex and approach that allowed us to work multi-threaded.  It was like a commitment of behavior.</p>
-            <p>A versionless, backwards compatible, hyrdra styled development approach - itterative and dependency free.</p>
-          </aside>
-        </section>
-
-        <section>
-          <h2 class="static-title">Why a services wrapper?</h2>
-          <p>Services has views and site building integration - that might seem like a more speedy solution.</p>
-          <p>BUT</p>
-          <p>Features isn't super great (TM) for asynchronous review, nor is our semantic model particularly easy to construct with views, and our expertise and resourcing gave us access to strong PHP chops</p>
-
-          <aside class="notes">
-
-          </aside>
-        </section>
-
 
 
         <section>
