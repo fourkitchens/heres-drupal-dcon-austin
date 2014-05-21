@@ -257,6 +257,7 @@
 					// Broadcasts the state of the notes window to synchronize
 					// the main window
 					function synchronizeMainWindow() {
+            var indices = currentSlide.contentWindow.Reveal.getIndices();
 						if( !silenced ) {
 							window.opener.Reveal.slide( indices.h, indices.v, indices.f );
 						}
