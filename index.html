@@ -6,8 +6,8 @@
 
     <title>Here's Drupal!</title>
 
-    <meta name="description" content="TODO: A presentation on Workbench, Workbench Moderation, and Workbench Access for Drupal 7 with workflow examples.">
-    <meta name="author" content="TODO: David Diers and Taylor Smith of Four Kitchens">
+    <meta name="description" content="The Tonight Show: A decoupled architecture, in code and in organization.">
+    <meta name="author" content="Andrew Berry and David Diers">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -47,7 +47,6 @@
 
         <section class="centered">
           <h1>Here's Drupal!</h1>
-          <p>TODO: I'm not sure about the narrowness of the font.</p>
           <p class="callout">Tonight on the Tonight Show with Jimmy Fallon</p>
           <p>
            <a href="http://twitter.com/deviantintegral" title="Follow Andrew Berry on Twitter">@deviantintegral</a>
@@ -123,33 +122,42 @@
 
         <section>
           <h1>The Guests</h1>
+        </section>
+
+        <section>
+          TODO: This logo is the best I've found, and isn't good :)
+          <img src="img/nbcuniversal_logo_new.png" alt="NBCUniversal"/>
           <aside class="notes">
             <p>NBC Digital; they're responsible for anything and everything digital for the NBC television brand. It's their job to build and maintain whatever online tools shows need to be effective, competitive, and engaging.</p>
-            <p><abbr title="Crispin Porter + Bogusky">CP+B</abbr> the primary contractor for <abbr title="The Tonight Show with Jimmy Fallon">TSJF</abbr>, they were responsible for designing and building both the web app and the mobile apps.</p>
-
-            <p>Four Kitchens and Lullabot on the Drupal team; both companies provided consultants, Drupal expertise, and developer resources.</p>
-
             <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC Digital.</p>
           </aside>
         </section>
 
         <section>
-          <p>TODO: This needs to not just be a list.</p>
-          <ul>
-            <li><abbr title="Crispin Porter + Bogusky">CP+B</abbr></li>
-            <li>NBC</li>
-            <li>Four Kitchens</li>
-            <li>Lullabot</li>
-          </ul>
-
+          <img src="img/CPB_LOGO_lockups_1-03.jpg" alt="Crispin Porter + Bogusky"/>
           <aside class="notes">
-            <p>Not only did we have a complex site to build, with a tight timeline, we had to with with a distributed team in both place and time.</p>
-            <p>The sun never set on the Tonight Show team.</p>
+            <p><abbr title="Crispin Porter + Bogusky">CP+B</abbr> the primary contractor for <abbr title="The Tonight Show with Jimmy Fallon">TSJF</abbr>, they were responsible for designing and building both the web app and the mobile apps.</p>
           </aside>
         </section>
 
         <section>
-          TODO: Insert map of where everyone was. Talk about the TZ range (remember QA).
+          <img src="img/four_kitchens.jpeg" alt="Four Kitchens"/>
+          <aside class="notes">
+            <p>Four Kitchens and Lullabot on the Drupal team. We'd worked together on NBC.com (which at the time was in parallel development).</p>
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/lullarobot_square.png" alt="Lullabot"/>
+          <aside class="notes">
+            <p>Both companies provided consultants, Drupal expertise, and developer resources.</p>
+            <p>The sun never set on the Tonight Show team.</p>
+            <p>Not only did we have a complex site to build, with a tight timeline, we had to with with a distributed team in both place and time.</p>
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/Team%20members.jpg" style="max-height: inherit;" width="1280" alt="Map of team, spanning most of the world." />
 
           <aside class="notes">
             <p>We have all of these team members, variance in time, place, company, and background separating them. I remember thinking "if this project is going to launch on time and with a full set of features, we'll need to structure the architecture itself to be non-blocking and dependency free.."</p>
@@ -205,20 +213,13 @@
               <li>P7 would be owned by the "Drupal crack team"; 4K, Lullabot</li>
               <li>The API design was handled by the two Drupal architects and the lead CP+B architect.</li>
               <li>Front end and apps handled by CP+B.</li>
-              <li>Product was owned by NBC, so they handled QA from an acceptance standpoint. TODO?</li>
+              <li>Product was owned by NBC, so they handled QA from an acceptance standpoint, while CP+B the first QA pass.</li>
             </ul>
           </aside>
         </section>
 
         <section>
-          <p>TODO: Replace with venn diagram of teams and primary expertise.</p>
-
-          <ul>
-            <li>CP+B: Front end, apps</li>
-            <li>NBC: Show expertise, infrastruction, production systems.</li>
-            <li>"Drupal crack team": 4K, Lullabot, +1 CP+B, occasional NBC (though worked on nbc.com)</li>
-            <li>Video integration expert: Lullabot (Matt K)</li>
-          </ul>
+          <img src="img/responsibilities.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
           <aside class="notes">
             <p>10 minutes</p>
           </aside>
@@ -364,6 +365,7 @@
           <aside class="notes">
             <p>The design of the API was the product it was a codex and approach that allowed us to work multi-threaded.  It was like a commitment of behavior.</p>
             <p>TODO: Find good API resources state our principles.</p>
+            <p><a href="https://www.lullabot.com/blog/article/legally-binding-your-web-apis">Legally binding your web APIs</a> came out of much of the TSJF API design work #self-promotion</p>
             <p>A versionless, backwards compatible, hyrdra styled development approach - itterative and dependency free. The API was often feature forward of the app and site releases.</p>
           </aside>
         </section>
@@ -377,6 +379,7 @@
             <p>Established caching, content permissions, and responsive ready resource delivery patterns in a familiar way to the enterprise (in use on one other property)</p>
             <p>Leveraged DBTNG dynamic query assembly, several layers of caching (entity and custom), and services classes.</p>
             <p>Did not handle routing - very dumb here - needed to get inventive</p>
+          </aside>
         </section>
 
         <section>
@@ -436,6 +439,33 @@
           </aside>
         </section>
 
+
+        <section>
+          <h1>The Finale</h1>
+          <aside class="notes">
+            <p>Building a decoupled stack has been a hot topic in the industry for several years.</p>
+            <p>But, it took either extraordinary content requirements or multiple channels to build.</p>
+            <p>We thought decoupled solutions were a solution for content longevity.</p>
+            <p>Decoupled architectures are  better way to work.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Constraints Inspire Innovation</h2>
+
+          <aside class="notes">
+            <p>We actually underestimated our ability to get work done in parallel. Now, I look at projects as "why not decoupled" instead of "why".</p>
+            <p>Not only did we decouple our technology and our teams, but we also decoupled project stress.</p>
+            <p>Some of our backend team members didn't even realize the site had launched to the public; our times of stress were spread out much more evenly throughout the whole project.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>TODO: David's takeaways to merge.</h2>
+          <aside class="notes">
+          <p>We're done! Questions?</p>
+          </aside>
+        </section>
 
         <section>
           <h1>Evaluate this Session</h1>

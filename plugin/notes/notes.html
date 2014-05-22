@@ -208,21 +208,39 @@
 
 					}, false );
 
-					var start = new Date(),
+					var start = getStartTime(),
 						timeEl = document.querySelector( '.time' ),
 						clockEl = document.getElementById( 'clock' ),
 						hoursEl = document.getElementById( 'hours' ),
 						minutesEl = document.getElementById( 'minutes' ),
 						secondsEl = document.getElementById( 'seconds' );
 
+					var start;
+					function getStartTime(reset) {
+					  if (typeof reset == 'undefined') {
+					    reset = false;
+					  }
+
+					  if (reset || typeof start == 'undefined') {
+					    start = new Date();
+					  }
+
+					  return start;
+					}
+
 					setInterval( function() {
+
+					var indices = currentSlide.contentWindow.Reveal.getIndices();
+					if (indices.h == 0) {
+					  getStartTime(true);
+					}
 
 						timeEl.style.opacity = 1;
 
 						var diff, hours, minutes, seconds,
 							now = new Date();
 
-						diff = now.getTime() - start.getTime();
+						diff = now.getTime() - getStartTime().getTime();
 						hours = Math.floor( diff / ( 1000 * 60 * 60 ) );
 						minutes = Math.floor( ( diff / ( 1000 * 60 ) ) % 60 );
 						seconds = Math.floor( ( diff / 1000 ) % 60 );
@@ -239,9 +257,8 @@
 					// Broadcasts the state of the notes window to synchronize
 					// the main window
 					function synchronizeMainWindow() {
-
+            var indices = currentSlide.contentWindow.Reveal.getIndices();
 						if( !silenced ) {
-							var indices = currentSlide.contentWindow.Reveal.getIndices();
 							window.opener.Reveal.slide( indices.h, indices.v, indices.f );
 						}
 
