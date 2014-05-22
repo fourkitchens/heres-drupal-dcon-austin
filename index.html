@@ -225,42 +225,65 @@
         </section>
 
         <section>
-          <h2 class="static-title">What was that now? Semantic whatsit?</h2>
-          <p>We started with the API thinking that providing outs would unblock the app and front end teams</p>
-          <p>However that led to a lot of 1-1 endpoints - a non-agnostic API approach</p>
-          <aside class="notes">
-             <p>I'll explain in a moment but let's start with how we got there.</p>
-             <p>We started working on the API first but we quickly observed we were headed down a prescriptive and unsustainable path.</p>
-             <p>Andrew, what were some of the problems we saw rear their head at that point?</p>
-             <p>Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
-          </aside>
+          <section>
+            <h2 class="static-title">So...Semantic what now?</h2>
+            <aside class="notes">
+               <p>I'll explain Semantic in a moment but let's start with how we got there.</p>
+               <p>We started working on the API first we all throught we could unblock all teams for asynchronous work</p>
+               <p>BUT we quickly observed we were headed down a prescriptive and unsustainable path.</p>
+               <p>Andrew, what were some of the problems we saw rear their head at that point?</p>
+               <p>Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
+            </aside>
+          </section>
+          <section>
+            <h2 class="static-title">So...Semantic whatsit?</h2>
+            <p>We started designing the API thinking that setting outputs would unblock the app and front end teams</p>
+            <p>However that led to a lot of 1-1 endpoints - a non-agnostic API approach</p>
+          </section>
         </section>
 
         <section>
-          <h2 class="static-title">FAIL BOAT</h2>
+          <h2 class="static-title">...</h2>
+          <img src="img/failboat.jpg">
 
           <aside class="notes">
-            <p>This was pretty clearly not going to help us suceed.</p>
+            <p>This was pretty close to a blocking workflow and clearly not going to help us suceed.</p>
             <ol>
               <li>Front end and back ends are very coupled.</li>
               <li>Content model does not have the flexibility show producers need</li>
             </ol>
+            <p>Based on this approach we realized that we need to rethink our content approach</p>
           </aside>
         </section>
 
         <section>
-          <h2 class="static-title">So... what is Semantic Content modeling?</h2>
-          <p>Content structures that resemble real-life elements of your business</p>
-          <p>For the Tonight Show that meant putting the content resources together like the show.</p>
-          <!--- toonses? -->
-          <aside class="notes">
-            <p>It can be easy in Drupal to have a page centric content model, starting from the pages or sections you want available and that then drives the fields, content and their relations</p>
-            <p>Who does that put in the driver's seat?</p>
-            <p>Your site is driving your content, wouldn't you prefer that your content drives the site?</p>
-          </aside>
+          <section>
+            <h2 class="static-title">The Dawn of the Semantic Content Model</h2>
+            <aside class="notes">
+              <p>It can be easy in Drupal to have a page centric content model, you start your model from the pages or sections you want available and that then drives the fields, content and their relations</p>
+              <p>But who does that put in the driver's seat?</p>
+            </aside>
+          </section>
+          <section>
+              <img src="img/toonses.jpg">
+              <aside class="notes">
+                <p>Your site is driving your content, wouldn't you prefer that your content drives the site? It's a more sustainable and more meaningful model.</p>
+                <p>Semantic Content Modeling would have you create structures that resemble the real-life elements of your business</p>
+                <p>Since Drupal wasn't responsible for pages at all but content we had some very clear freedom from that pattern, which, was helpful in creating agnostic and dependency free endpoints.</p>
+              </aside>
+          </section>
+          <section>
+            <h2 class="static-title">The Dawn of the Semantic Content Model</h2>
+            <p>Content structures that resemble real-life elements of your business</p>
+            <p>For the Tonight Show that meant putting the content resources together like the show.</p>
+          </section>
         </section>
 
         <section>
+          <section>
+            <h2 class="static-title">Thinking Semantically: A joke is the smallest atomic unit of funny.</h2>
+          </section>
+          <section>
           <h2 class="static-title">Thinking Semantically: A joke is the smallest atomic unit of funny.</h2>
           <p>Build from the smallest unique component of the show</p>
           <!--- TODO: Diagram of show and components-->
