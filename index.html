@@ -125,10 +125,9 @@
         </section>
 
         <section>
-          TODO: This logo is the best I've found, and isn't good :)
-          <img src="img/nbcuniversal_logo_new.png" alt="NBCUniversal"/>
+          <img src="img/2013_NBCEntDigital_LOGO.jpg" alt="NBC Entertainment Digital"/>
           <aside class="notes">
-            <p>NBC Digital; they're responsible for anything and everything digital for the NBC television brand. It's their job to build and maintain whatever online tools shows need to be effective, competitive, and engaging.</p>
+            <p>NBC Entertainment Digital; they're responsible for anything and everything digital for the NBC television brand. It's their job to build and maintain whatever online tools shows need to be effective, competitive, and engaging.</p>
             <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC Digital.</p>
           </aside>
         </section>
@@ -169,6 +168,68 @@
         </section>
 
         <section>
+          <h1>Decompose the system</h1>
+          <aside class="notes">
+            <p>Our first task was to define the systems that needed to be built, and who owned what.</p>
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/areas-of-focus/areas-of-focus.001.png" alt="Areas of focus." style="max-height: inherit;" />
+          <aside class="notes">
+            <p>Then, we could map each system to each team's primary expertise and give them ownership over the product.</p>
+            <p>We started from the source of content (to us) and moved through each system all the way to the end user.</p>
+          </aside>
+        </section>
+
+        <section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.001.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>Our first task was to define the systems that needed to be built, and who owned what.</p>
+              <p>Then, we could map each system to each team's primary expertise and give them ownership over the product.</p>
+            </aside>
+          </section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.002.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>Content modelling needed to be a completely collaborative effort.</p>
+            </aside>
+          </section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.003.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>The API design was handled by the two Drupal architects and the lead CP+B architect.</p>
+              <p>API could be primarily on the tech teams, with NBC providing review.</p>
+            </aside>
+          </section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.004.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>P7 would be lead by 4K, Lullabot</p>
+            </aside>
+          </section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.005.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>Video is a special case; upstream video management systems, MPX.</p>
+            </aside>
+          </section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.006.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>Front end and apps handled by CP+B.</p>
+            </aside>
+          </section>
+          <section data-transition="none">
+            <img src="img/responsibilities/responsibilities.007.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
+            <aside class="notes">
+              <p>NBC became free to be our show and infrastructure experts.</p>
+            </aside>
+          </section>
+        </section>
+
+        <section>
           <h2 class="static-title">In a way, it's like winning at "Lip Synch Battle"</h2>
 
 
@@ -201,29 +262,6 @@
         </section>
 
         <section>
-          <aside class="notes">
-            <p>Our first task was to define the systems that needed to be built, and who owned what.</p>
-            <p>Then, we could map each system to each team's primary expertise and give them ownership over the product.</p>
-            <p>We started from the source of content (to us) and moved through each system all the way to the end user.</p>
-            <ul>
-              <li>All non-video content from the show's producers into Publisher 7.</li>
-              <li>Video content from MPX, curated by producers in P7.</li>
-              <li>P7 would be owned by the "Drupal crack team"; 4K, Lullabot</li>
-              <li>The API design was handled by the two Drupal architects and the lead CP+B architect.</li>
-              <li>Front end and apps handled by CP+B.</li>
-              <li>Product was owned by NBC, so they handled QA from an acceptance standpoint, while CP+B the first QA pass.</li>
-            </ul>
-          </aside>
-        </section>
-
-        <section>
-          <img src="img/responsibilities.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
-          <aside class="notes">
-            <p>10 minutes</p>
-          </aside>
-        </section>
-
-        <section>
           <section>
             <h2 class="static-title">So...Semantic what now?</h2>
             <aside class="notes">
@@ -245,7 +283,7 @@
 
         <section>
           <h2 class="static-title">...</h2>
-          <img src="img/failboat.jpg">
+          <img src="img/failboat.jpg" alt="failboat">
 
           <aside class="notes">
             <p>This was pretty close to a blocking workflow and clearly not going to help us suceed.</p>
@@ -267,7 +305,7 @@
           </section>
           <section>
               <h2 class="static-title">The Dawn of the Semantic Content Model</h2>
-              <img src="img/toonses.jpg">
+              <img src="img/toonses.jpg" alt="toonses">
               <aside class="notes">
                 <p>Your site is driving your content in this page centric model, wouldn't you prefer that your content drive the site? It's a more sustainable and more meaningful model.</p>
                 <p>Semantic Content Modeling would have you create structures that resemble the real-life elements of your business</p>
