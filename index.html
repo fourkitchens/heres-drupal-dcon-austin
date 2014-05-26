@@ -170,23 +170,20 @@
 
         <section>
           <h2 class="static-title">In a way, it's like winning at "Lip Synch Battle"</h2>
-          <p>TODO: Need Rules of Lip Synch Battle</p>
 
-          TODO: Need images from lip synch battle bit.
 
+          <img src="img/emma_fallon.jpg" alt="Emma Stone throwing down">
+
+        <aside class="notes">
+          <p>Rules of lip synch battle - both take turns lip synching popular songs, do not know what the other player has picked, Jimmy always concedes to the other player.</p>
+          <p>Ok, it's actually nothing like winning at Lip Synch Battle.</p>
+          <p>But it is a little like playing - you know what you need to do, you don't know what others are going to do and if you don't block the other teams, you both might win.</p>
           <ul>
-            <li>Be flexible</li>
-            <li>Have some bits prepared</li>
-            <li>You won't know what is coming, but you can practice how you will react</li>
+            <li>Allow independent iteration on all layers of the site</li>
+            <li>Play to our strengths - reduce and simplify developer dependencies</li>
+            <li>Foster a mindset and a language not a prescription</li>
           </ul>
-
-          <aside class="notes">
-            <ul>
-               <li>Allow independent iteration on all layers of the site</li>
-               <li>Play to our strengths - reduce and simplify developer dependencies</li>
-               <li>Foster a mindset and a language not a prescription</li>
-             </ul>
-         </aside>
+        </aside>
         </section>
 
         <section>
@@ -199,6 +196,7 @@
           <aside class="notes">
              <p>A decoupled app &amp; web front end with a services based Drupal API layer.</p>
              <p>And an abstracted semantic content model that supported great iteration.</p>
+             <p>Our game plan:</p>
           </aside>
         </section>
 
@@ -229,17 +227,19 @@
           <section>
             <h2 class="static-title">So...Semantic what now?</h2>
             <aside class="notes">
-               <p>I'll explain Semantic in a moment but let's start with how we got there.</p>
+               <p>I'll explain our Semantic content model in a moment but let's start with how we got there.</p>
                <p>We started working on the API first we all throught we could unblock all teams for asynchronous work</p>
                <p>BUT we quickly observed we were headed down a prescriptive and unsustainable path.</p>
                <p>Andrew, what were some of the problems we saw rear their head at that point?</p>
                <p>Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
+               <p>The initial design was display centric with some concessions for REST</p>
             </aside>
           </section>
           <section>
-            <h2 class="static-title">So...Semantic whatsit?</h2>
+            <h2 class="static-title">So...Semantic what now?</h2>
             <p>We started designing the API thinking that setting outputs would unblock the app and front end teams</p>
             <p>However that led to a lot of 1-1 endpoints - a non-agnostic API approach</p>
+            <p>The initial design was display centric with some concessions for REST</p>
           </section>
         </section>
 
@@ -250,10 +250,10 @@
           <aside class="notes">
             <p>This was pretty close to a blocking workflow and clearly not going to help us suceed.</p>
             <ol>
-              <li>Front end and back ends are very coupled.</li>
-              <li>Content model does not have the flexibility show producers need</li>
+              <li>Front end and back ends are very coupled - reduces reusability.</li>
+              <li>Content model did not have the flexibility production staff need longterm</li>
             </ol>
-            <p>Based on this approach we realized that we need to rethink our content approach</p>
+            <p>Based on this approach we realized that the biggest unblocker would be a quality content model</p>
           </aside>
         </section>
 
@@ -266,17 +266,32 @@
             </aside>
           </section>
           <section>
+              <h2 class="static-title">The Dawn of the Semantic Content Model</h2>
               <img src="img/toonses.jpg">
               <aside class="notes">
-                <p>Your site is driving your content, wouldn't you prefer that your content drives the site? It's a more sustainable and more meaningful model.</p>
+                <p>Your site is driving your content in this page centric model, wouldn't you prefer that your content drive the site? It's a more sustainable and more meaningful model.</p>
                 <p>Semantic Content Modeling would have you create structures that resemble the real-life elements of your business</p>
                 <p>Since Drupal wasn't responsible for pages at all but content we had some very clear freedom from that pattern, which, was helpful in creating agnostic and dependency free endpoints.</p>
               </aside>
           </section>
           <section>
             <h2 class="static-title">The Dawn of the Semantic Content Model</h2>
-            <p>Content structures that resemble real-life elements of your business</p>
-            <p>For the Tonight Show that meant putting the content resources together like the show.</p>
+            <ul>
+              <li>Content structures resemble real-life</li>
+              <li>For the Tonight Show that meant resources would look like the show</li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="static-title">Semantic BUT Abstract</h2>
+            <aside class="notes">
+              <p>Set the correct resolution on your model. Once the abstraction level (10,000 feet or 100 feet) is codified - it connects the dots between performance and production for the long-term</p>
+              <p>Direct modeling would be ungainly as Jimmy has tremendous variety in his recurring segments</p>
+            </aside>
+          </section>
+          <section>
+            <h2 class="static-title">Semantic BUT Abstract</h2>
+            <p>Setting the correct resolution for semantics is important.</p>
+            <p>Addresses volatility in trends and interests - gives you flexibility</p>
           </section>
         </section>
 
@@ -284,47 +299,83 @@
           <section>
             <h2 class="static-title">Thinking Semantically: A joke is the smallest atomic unit of funny.</h2>
             <aside class="notes">
-              <p>Eddie from NBC Digital had this great insight to really push for the idea that the smallest meaningful component of the late show, is the joke, and that we could build from there.</p>
+              <p>Eddie Lee from NBC Digital had this great insight to really push for the idea that the smallest meaningful component of the late show, is the joke, and that we could build from there.</p>
               <p>It coincided perfectly with the mission of the site, the apps, and the property, to provide shareable moments that viewers, fans and their networks can experience the best moments time and again.</p>
             </aside>
           </section>
           <section>
-          <h2 class="static-title">Thinking Semantically: A joke is the smallest atomic unit of funny.</h2>
-          <p>Build from the smallest unique component of the show</p>
-          <!--- TODO: Diagram of show and components-->
-          <div class="col-two index-list">
-            <div class="col left centered">
-              <p><strong>Show elements:</strong></p>
-              <ul>
-                <li>Joke</li>
-                <li>Bit</li>
-                <li>Segment</li>
-              </ul>
-            </div>
-            <div class="col right centered">
-              <p><strong>Other show elements:</strong></p>
-              <ul>
-                <li>Guests</li>
-                <li>Challenges</li>
-                <li>Games</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+            <h2 class="static-title">Thinking Semantically: A joke is the smallest atomic unit of funny.</h2>
+            <p>Build from the smallest unique component of the show</p>
 
-
-        <section>
-          <section>
-            <h2 class="static-title">Semantic and Abstract</h2>
-          </section>
-          <section>
-            <h2 class="static-title">Semantic and Abstract</h2>
-            <p>Addresses volatility in trends and interests - gives you flexibility</p>
-            <p>Connects the dots between performance and production</p>
+            <div class="col-two index-list">
+              <div class="col left centered">
+                <p><strong>Show elements:</strong></p>
+                <ul>
+                  <li>Joke</li>
+                  <li>Bit</li>
+                  <li>Segment</li>
+                  <li>Guests</li>
+                </ul>
+              </div>
+              <div class="col right centered">
+                <p><strong>Other show elements:</strong></p>
+                <ul>
+                  <li>Challenges</li>
+                  <li>Games</li>
+                </ul>
+              </div>
+            </div>
           </section>
         </section>
 
         <section>
+          <section>
+            <h2 class="static-title">In Practice</h2>
+            <p>We ended up with a Semantic content model...MOSTLY</p>
+            <aside class="notes">
+              <p>What we found is that it made sense to have a multi-layered content approach</p>
+              <p>The theory of it can be taken to far - it's like database optimization</p>
+              <p>The end result was a content model that would drive a restful site with a few sacrifices for display - rather than the other way around</p>
+              <p>Get the benefits of semantic content modeling plus the benefits of a familiar editorial workflow.</p>
+            </aside>
+          </section>
+          <section>
+            <h2 class="static-title">In Practice</h2>
+            <div class="col-three index-list">
+              <div class="col first centered">
+                <h3>Building Blocks</h3>
+                <ul>
+                  <li>Video</li>
+                  <li>image</li>
+                  <li>carousel items</li>
+                </ul>
+              </div>
+              <div class="col middle centered">
+                <h3>Semantic elements</h3>
+                <ul>
+                  <li>Bits</li>
+                  <li>Segments</li>
+                  <li>Challenges</li>
+                  <li>Games</li>
+                  <li>Guests</li>
+                </ul>
+              </div>
+              <div class="col last centered">
+                <h3>Display-centric elements</h3>
+                  <ul>
+                    <li>Carousels</li>
+                    <li>Blog Posts</li>
+                    <li>Queues</li>
+                    <li>Image Galleries</li>
+                  </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              <p>We created entities that weren't semantic but were building blocks to be used by the semantic content types</p>
+              <p>We then created semantic show based content types which tied these elements together through references that we could utilize as endpoints.</p>
+              <p>Finally we had several content types whose primary function was site/app display centric that could weave semantic elements and building blocks together freely.</p>
+            </aside>
+          </section>
           <section>
             <h2 class="static-title">Semantic Content Modeling Benefits</h2>
             <aside>
@@ -342,50 +393,6 @@
               <li>Looked like any other editorial process at NBC Digital</li>
               <li>Content is finally driving</li>
             </ul>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2 class="static-title">In Practice</h2>
-            <p>We ended up with a Semantic content model...MOSTLY</p>
-            <aside class="notes">
-              <p>What we found is that it made sense to have a multi-layered content approach</p>
-              <p>The theory of it can be taken to far - it's like database optimization</p>
-              <p>Get the benefits of semantic content modeling and get the benefits of a familiar editorial workflow.</p>
-            </aside>
-          </section>
-          <section>
-            <h2 class="static-title">In Practice</h2>
-            <div class="col-two index-list">
-              <div class="col left centered">
-                <h3>Building Blocks</h3>
-                <ul>
-                  <li>video</li>
-                  <li>image</li>
-                  <li>image galleries</li>
-                  <li>carousels</li>
-                  <li>carousel items</li>
-                  <li>blog post</li>
-                  <li>guests</li>
-                  <li>queues (Arbitrary collection)</li>
-                </ul>
-              </div>
-              <div class="col right centered">
-                <h3>Semantic Elements</h3>
-                <ul>
-                  <li>Bits</li>
-                  <li>Segments</li>
-                  <li>Challenges</li>
-                  <li>Games</li>
-                  <li>Queues (as show)</li>
-                </ul>
-              </div>
-            </div>
-            <aside class="notes">
-              <p>We created content types that weren't semantic but were building blocks</p>
-              <p>We then created semantic show based content types which tied these elements together through references that we could utilize as endpoints.</p>
-            </aside>
           </section>
         </section>
 
