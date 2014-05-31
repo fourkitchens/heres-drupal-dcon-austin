@@ -122,69 +122,72 @@
         </section>
 
         <section>
-          <h1>The Guests</h1>
-        </section>
+          <section>
+            <h1>The Guests</h1>
+          </section>
 
-        <section>
-          <img src="img/2013_NBCEntDigital_LOGO.jpg" alt="NBC Entertainment Digital"/>
-          <aside class="notes">
-            <p>NBC Entertainment Digital; they're responsible for anything and everything digital for the NBC television brand. It's their job to build and maintain whatever online tools shows need to be effective, competitive, and engaging.</p>
-            <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC Digital.</p>
-          </aside>
-        </section>
+          <section>
+            <img src="img/2013_NBCEntDigital_LOGO.jpg" alt="NBC Entertainment Digital"/>
+            <aside class="notes">
+              <p>NBC Entertainment Digital; they're responsible for anything and everything digital for the NBC television brand. It's their job to build and maintain whatever online tools shows need to be effective, competitive, and engaging.</p>
+              <p>NBC Operations and Tools Support; They're the team behind the Publisher 7 Drupal distribution used internally at NBC Digital.</p>
+            </aside>
+          </section>
 
-        <section>
-          <img src="img/CPB_LOGO_lockups_1-03.jpg" alt="Crispin Porter + Bogusky"/>
-          <aside class="notes">
-            <p><abbr title="Crispin Porter + Bogusky">CP+B</abbr> the primary contractor for <abbr title="The Tonight Show with Jimmy Fallon">TSJF</abbr>, they were responsible for designing and building both the web app and the mobile apps.</p>
-          </aside>
-        </section>
+          <section>
+            <img src="img/CPB_LOGO_lockups_1-03.jpg" alt="Crispin Porter + Bogusky"/>
+            <aside class="notes">
+              <p><abbr title="Crispin Porter + Bogusky">CP+B</abbr> the primary contractor for <abbr title="The Tonight Show with Jimmy Fallon">TSJF</abbr>, they were responsible for designing and building both the web app and the mobile apps.</p>
+            </aside>
+          </section>
 
-        <section>
-          <div class="col-two index-list">
-            <div class="col left centered">
-              <img src="img/4K-logo-large.png" alt="Four Kitchens" style="border:0px; background:rgba(255,255,255,0); box-shadow: none;"/>
+          <section>
+            <div class="col-two index-list">
+              <div class="col left centered">
+                <img src="img/4K-logo-large.png" alt="Four Kitchens" style="border:0px; background:rgba(255,255,255,0); box-shadow: none;"/>
+              </div>
+              <div class="col right centered">
+                <img style="z-index:1;" src="img/lullarobot_square.png" alt="Lullabot"/>
+              </div>
             </div>
-            <div class="col right centered">
-              <img style="z-index:1;" src="img/lullarobot_square.png" alt="Lullabot"/>
-            </div>
-          </div>
-          <aside class="notes">
-            <p>Four Kitchens and Lullabot on the Drupal team. We'd worked together on NBC.com (which at the time was in parallel development).</p>
-            <p>Both companies provided consultants, Drupal expertise, and developer resources.</p>
-            <p>The sun never set on the Tonight Show team.</p>
-            <p>Not only did we have a complex site to build, with a tight timeline, we had to with with a distributed team in both place and time.</p>
-          </aside>
-        </section>
+            <aside class="notes">
+              <p>Four Kitchens and Lullabot on the Drupal team. We'd worked together on NBC.com (which at the time was in parallel development).</p>
+              <p>Both companies provided consultants, Drupal expertise, and developer resources.</p>
+              <p>The sun never set on the Tonight Show team.</p>
+              <p>Not only did we have a complex site to build, with a tight timeline, we had to with with a distributed team in both place and time.</p>
+            </aside>
+          </section>
 
-        <section>
-          <img src="img/Team%20members.jpg" style="max-height: inherit;" width="1280" alt="Map of team, spanning most of the world." />
+          <section>
+            <img src="img/Team%20members.jpg" style="max-height: inherit;" width="1280" alt="Map of team, spanning most of the world." />
 
-          <aside class="notes">
-            <p>We have all of these team members, variance in time, place, company, and background separating them. I remember thinking "if this project is going to launch on time and with a full set of features, we'll need to structure the architecture itself to be non-blocking and dependency free.."</p>
-          </aside>
+            <aside class="notes">
+              <p>We have all of these team members, variance in time, place, company, and background separating them. I remember thinking "if this project is going to launch on time and with a full set of features, we'll need to structure the architecture itself to be non-blocking and dependency free.."</p>
+            </aside>
+          </section>
         </section>
 
         <section>
           <blockquote>To succeed, we need a non-blocking technical architecture.</blockquote>
         </section>
 
-        <section>
-          <h1>Decompose the system</h1>
-          <aside class="notes">
-            <p>Our first task was to define the systems that needed to be built, and who owned what.</p>
-          </aside>
-        </section>
+
 
         <section>
-          <img src="img/areas-of-focus/areas-of-focus.001.png" alt="Areas of focus." style="max-height: inherit;" />
-          <aside class="notes">
-            <p>Then, we could map each system to each team's primary expertise and give them ownership over the product.</p>
-            <p>We started from the source of content (to us) and moved through each system all the way to the end user.</p>
-          </aside>
-        </section>
+          <section>
+            <h1>Decompose the system</h1>
+            <aside class="notes">
+              <p>Our first task was to define the systems that needed to be built, and who owned what.</p>
+            </aside>
+          </section>
 
-        <section>
+          <section>
+            <img src="img/areas-of-focus/areas-of-focus.001.png" alt="Areas of focus." style="max-height: inherit;" />
+            <aside class="notes">
+              <p>Then, we could map each system to each team's primary expertise and give them ownership over the product.</p>
+              <p>We started from the source of content (to us) and moved through each system all the way to the end user.</p>
+            </aside>
+          </section>
           <section data-transition="none">
             <img src="img/responsibilities/responsibilities.001.png" style="max-height: inherit;" alt="Quadrant diagram of who was primarily responsible for what."/>
             <aside class="notes">
@@ -253,13 +256,12 @@
         <h2 class="static-title">Our Non-Blocking Approach</h2>
           <p>The two biggest components are:</p>
           <ul>
-            <li>A <abbr>COPE</abbr> Decoupled technology stack</li>
+            <li>A <abbr title="Create once publish everywhere">COPE</abbr> decoupled technology stack</li>
             <li>Semantic content model</li>
           </ul>
           <aside class="notes">
              <p>A decoupled app &amp; web front end with a services based Drupal API layer.</p>
              <p>And an abstracted semantic content model that supported great iteration.</p>
-             <p>Our game plan:</p>
           </aside>
         </section>
 
@@ -268,36 +270,41 @@
             <h2 class="static-title">So...Semantic what now?</h2>
             <aside class="notes">
                <p>I'll explain our Semantic content model in a moment but let's start with how we got there.</p>
-               <p>We started working on the API first we all throught we could unblock all teams for asynchronous work</p>
-               <p>BUT we quickly observed we were headed down a prescriptive and unsustainable path.</p>
-               <p>Andrew, what were some of the problems we saw rear their head at that point?</p>
+               <p>We started working on the API first we all throught we could unblock all teams for asynchronous work - you know - let's get our outputs defined so everybody knows whats coming and can start working.</p>
+               <p>BUT we quickly observed we were headed down a prescriptive and unsustainable path. - it wasn't the answers that were the problems but the questions themselves which were coming very squarely from the displays.</p>
                <p>Endpoints tended to be requests for very specific resources and the front end was dictating the content model.</p>
                <p>The initial design was display centric with some concessions for REST</p>
             </aside>
           </section>
           <section>
             <h2 class="static-title">So...Semantic what now?</h2>
-            <p>We started designing the API thinking that setting outputs would unblock the app and front end teams</p>
-            <p>However that led to a lot of 1-1 endpoints - a non-agnostic API approach</p>
-            <p>The initial design was display centric with some concessions for REST</p>
+            <div class="col-two index-list">
+              <div class="col left centered">
+                <h3>We thought we could unblock through the API</h3>
+              </div>
+              <div class="col right centered">
+                <h4>BUT</h4>
+                <ul>
+                  <li>This got tightly coupled quickly</li>
+                  <li>This was a display centric API with some concessions for REST</li>
+                </ul>
+              </div>
+            </div>
           </section>
-        </section>
+          <section>
+            <h2 class="static-title">...</h2>
+            <img src="img/failboat.jpg" alt="failboat">
 
-        <section>
-          <h2 class="static-title">...</h2>
-          <img src="img/failboat.jpg" alt="failboat">
+            <aside class="notes">
+              <p>This was pretty close to a blocking workflow and clearly not going to help us suceed.</p>
+              <ol>
+                <li>Front end and back ends are very coupled - reduces reusability.</li>
+                <li>Content model did not have the flexibility production staff need longterm</li>
+              </ol>
+              <p>Based on this approach we realized that the biggest unblocker would be a quality content model</p>
+            </aside>
+          </section>
 
-          <aside class="notes">
-            <p>This was pretty close to a blocking workflow and clearly not going to help us suceed.</p>
-            <ol>
-              <li>Front end and back ends are very coupled - reduces reusability.</li>
-              <li>Content model did not have the flexibility production staff need longterm</li>
-            </ol>
-            <p>Based on this approach we realized that the biggest unblocker would be a quality content model</p>
-          </aside>
-        </section>
-
-        <section>
           <section>
             <h2 class="static-title">The Dawn of the Semantic Content Model</h2>
             <aside class="notes">
@@ -333,9 +340,6 @@
             <p>Setting the correct resolution for semantics is important.</p>
             <p>Addresses volatility in trends and interests - gives you flexibility</p>
           </section>
-        </section>
-
-        <section>
           <section>
             <h2 class="static-title">The Science of Semantics</h2>
             <div class="centered"><p>The joke: smallest atomic unit of funny.</p></div>
@@ -367,9 +371,6 @@
               </div>
             </div>
           </section>
-        </section>
-
-        <section>
           <section>
             <h2 class="static-title">In Practice</h2>
             <p>We ended up with a Semantic content model...MOSTLY</p>
@@ -441,19 +442,19 @@
           <section>
             <h2 class="static-title">The Second Part of our Non-blocking approach: The API</h2>
             <aside class="notes">
-              <p>Establish Ins/Outs - Multi-platform, multi-team development needed to happen independently</p>
+              <p>Establish Outs - Multi-platform, multi-team development needed to happen independently</p>
+              <p>Develop with agility, respond to volatility, free front-end up for frequent updates.</p>
               <p>Hopefully save time by adopting some existing API work.</p>
               <p>Provide continuity for editorial and support teams at NBC Digital.</p>
-              <p>Develop with agility, respond to volatility, free front-end up for frequent updates.</p>
             </aside>
           </section>
           <section>
             <h2 class="static-title">The Second Part of our Non-blocking approach: The API</h2>
             <ul>
-              <li>Establish Ins/Outs</li>
-              <li>Leverage a pre-existing API framework</li>
-              <li>Consitent editorial experience</li>
+              <li>Establish Well Conceived Outputs</li>
               <li>Decoupled - faster itterations and deployment</li>
+              <li>Leverage a pre-existing API framework</li>
+              <li>Consistent editorial experience</li>
             </ul>
           </section>
 
@@ -493,40 +494,64 @@
               <li>Versionless, backwards compatible, and dependency free.</li>
             </ul>
           </section>
-        </section>
+          <section>
+            <h2 class="static-title">API Concerns</h2>
+            <div class="col-two index-list">
+              <div class="col left centered">
+                <h3>YES</h3>
+                <ul>
+                  <li>Provide Semantic content</li>
+                  <li>Provide display content</li>
+                  <li>Be performance</li>
+                  <li>Respect permissions, state</li>
+                  <li>Deliver agnostic and predicatable resource managment</li>
+                </ul>
+              </div>
+              <div class="col right centered">
+                <h3>NO</h3>
+                <ul>
+                  <li>Routing</li>
+                  <li>Display tailored results</li>
+                  <li>Authenticated audience interaction</li>
+                </ul>
+              </div>
+            </div>
+            <aside class="notes">
+              <p>Here are the basic concerns of our API</p>
+              <p>Provided a highly customizable way to select indvidual and groups of semantic and display-centric content for endpoints</p>
+              <p>Content caching and permissions, and responsive ready inner resource patterns in a familiar way to the enterprise (in use on one other property)</p>
+              <p>Leveraged DBTNG dynamic query assembly, several layers of caching (entity and custom), and services classes.</p>
+              <p>Did not handle routing</p>
+            </aside>
+          </section>
 
-        <section>
-          <h2 class="static-title">API Concerns</h2>
-          TODO: Diagram the concerns and capabilities of Services Wrapper - generally describe what it was able to do.
-          <aside class="notes">
-            <p>Here are the basic concerns of our API</p>
-            <p>Provided a highly customizable way to select indvidual and groups of semantic and display-centric content for endpoints</p>
-            <p>Content caching and permissions, and responsive ready inner resource patterns in a familiar way to the enterprise (in use on one other property)</p>
-            <p>Leveraged DBTNG dynamic query assembly, several layers of caching (entity and custom), and services classes.</p>
-            <p>Did not handle routing</p>
-          </aside>
-        </section>
+          <section>
+            <h2 class="static-title">That's no API, it's a PHPOOPAPI</h2>
 
-        <section>
-          <h2 class="static-title">That's no API, it's a PHPOOPAPI</h2>
-          <p>Let us utilize strong PHP OOP resources</p>
-          <p>OOP inheritence let us shift Drupalisms lower down and simplify implementing classes</p>
-          <p>Simpler implementations allowed quicker and cleaner review of asynchronous work.</p>
+            <aside class="notes">
+              <p>Even within a services based API solution - there are options - why not site build for speed? - It may be fast to get out there but it is not fast to itterate on asynchronously.</p>
+              <p>OOP code was more sensible than features or views code - easy to see what had been changed while teams worked around the clock and easy to extend cleanly and consistently</p>
+              <p>Using a heavliy PHP OOP solution let us leverage the available expertise and resources in a sustainable way - still deliver a familiar editorial and backend solution.</p>
+              <p>Solve for the obtuse in one place - keep drupalisms low to the ground </p>
+            </aside>
+          </section>
 
-          <aside class="notes">
-            <p>Even within a services based API solution - there are options - why not site build for speed? - It may be fast to get out there but it is not fast to itterate on asynchronously.</p>
-            <p>OOP code was more sensible than features or views code - easy to see what had been changed while teams worked around the clock and easy to extend cleanly and consistently</p>
-            <p>Using a heavliy PHP OOP solution let us leverage the available expertise and resources in a sustainable way - still deliver a familiar editorial and backend solution.</p>
-            <p>Solve for the obtuse in one place - keep drupalisms low to the ground </p>
-          </aside>
-        </section>
+          <section>
+            <h2 class="static-title">That's no API, it's a PHPOOPAPI</h2>
+            <ul>
+              <li>Let us utilize strong PHP OOP resources</li>
+              <li>OOP inheritence let us shift Drupalisms lower down and simplify implementing classes</li>
+              <li>Simpler implementations allowed quicker and cleaner review of asynchronous work.</li>
+            </ul>
+          </section>
 
-        <section>
           <section>
             <h2 class="static-title">The API In practice.</h2>
-              <p>The API was structured similarly so that calls could be placed in reliable ways.</p>
-              <p>An API call to a display centric resource looks something like this:</p>
-              <p>episodes?id=15</p>
+            <ul>
+              <li>The API was structured similarly so that calls could be placed in reliable ways.</li>
+              <li>An API call to a display centric resource looks something like this:</li>
+            </ul>
+            <p style="margin-top:.75em; margin-left:.75em;">episodes?id=15</p>
           </section>
           <section>
             <h2 class="static-title">The API In practice.</h2>
@@ -599,9 +624,6 @@
               <p>This consistency was key to keeping platform teams asynchronous and unblocked.</p>
             </aside>
           </section>
-        </section>
-
-        <section>
           <section>
             <h2>Drupal as content provider - challenges</h2>
             <aside class="notes">
