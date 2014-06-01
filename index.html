@@ -239,7 +239,6 @@
         <section>
           <h2 class="static-title">In a way, it's like winning at "Lip Synch Battle"</h2>
 
-
           <img src="img/emma_fallon.jpg" alt="Emma Stone throwing down">
 
         <aside class="notes">
@@ -453,7 +452,7 @@
           <section>
             <h2 class="static-title">The Second Part of our Non-blocking approach: The API</h2>
             <ul>
-              <li>Establish Well Conceived Outputs</li>
+              <li>Establish Outputs</li>
               <li>Decoupled - faster itterations and deployment</li>
               <li>Leverage a pre-existing API framework</li>
               <li>Consistent editorial experience</li>
@@ -521,9 +520,8 @@
             <aside class="notes">
               <p>Here are the basic concerns of our API</p>
               <p>Provided a highly customizable way to select indvidual and groups of semantic and display-centric content for endpoints</p>
-              <p>Content caching and permissions, and responsive ready inner resource patterns in a familiar way to the enterprise (in use on one other property)</p>
-              <p>Leveraged DBTNG dynamic query assembly, several layers of caching (entity and custom), and services classes.</p>
-              <p>Did not handle routing</p>
+              <p>Deliver endpoints quickly and accurately - Content caching and permissions, and responsive ready inner resource patterns in a familiar way to the enterprise (in use on one other property)</p>
+              <p>Routing, specific tailored results, and authenticated interaction were all handled elsewhere</p>
             </aside>
           </section>
 
@@ -541,9 +539,9 @@
           <section>
             <h2 class="static-title">That's no API, it's a PHPOOPAPI</h2>
             <ul>
-              <li>Let us utilize strong PHP OOP resources</li>
-              <li>OOP inheritence let us shift Drupalisms lower down and simplify implementing classes</li>
-              <li>Simpler implementations allowed quicker and cleaner review of asynchronous work.</li>
+              <li>Let us utilize available strong PHP OOP resources</li>
+              <li>OOP inheritence let us shift complexity down and simplify implementing classes</li>
+              <li>Simpler implementations gave us cleaner asynchronous workflows.</li>
             </ul>
           </section>
 
@@ -576,11 +574,11 @@
                     "orientation":"portrait",
                     "emphasized":false,
                     "isGif":false,
-                    "url":"http://nbc.com/thetonightshow/sites/nbcutsjf/files/images/2014/02/05/img_20130309_140147_1.jpg",
-                    "bitImageStacked":"http://nbc.com/thetonightshow/sites/nbcutsjf/files/styles/bit_stacked_resized/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=NUKlRWNu",
-                    "detailImageSmall":"http://nbc.com/thetonightshow/sites/nbcutsjf/files/styles/detail_image_small_portrait/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=ApiJp4Od",
-                    "detailImageMedium":"http://nbc.com/thetonightshow/sites/nbcutsjf/files/styles/detail_image_medium_portrait/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=WakkI2CC",
-                    "detailImageLarge":"http://nbc.com/thetonightshow/sites/nbcutsjf/files/styles/detail_image_large_portrait/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=3s6NWs-A"
+                    "url":"http://tonightshowpath.com/files/images/2014/02/05/img_20130309_140147_1.jpg",
+                    "bitImageStacked":"http://tonightshowpath.com/files/styles/bit_stacked_resized/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=NUKlRWNu",
+                    "detailImageSmall":"http://tonightshowpath.com/files/styles/detail_image_small_portrait/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=ApiJp4Od",
+                    "detailImageMedium":"http://tonightshowpath.com/files/styles/detail_image_medium_portrait/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=WakkI2CC",
+                    "detailImageLarge":"http://tonightshowpath.com/files/styles/detail_image_large_portrait/public/images/2014/02/05/img_20130309_140147_1.jpg?itok=3s6NWs-A"
                 }
             ]
         },
@@ -608,7 +606,7 @@
         "orientation": "landscape",
         "emphasized": false,
         "isGif": false,
-        "bitStacked": "http://www.nbc.com/app2/img/144x81xS/scet/episode/6/9/3/6/9/rok_504_sm.jpg",
+        "bitStacked": "http://path.image.com/app2/img/144x81xS/scet/episode/6/9/3/6/9/rok_504_sm.jpg",
         "androidLdpi": "http://path.image.com/image2.png",
         "androidMdpi": "http://path.image.com/image2.png",
         "androidHdpi": "http://path.image.com/image2.png",
@@ -629,17 +627,18 @@
           <section>
             <h2>Drupal as content provider - challenges</h2>
             <aside class="notes">
+              <p>
               <p>It's not a site - so you lose things you get for free like unpublished previewing and routing</p>
-              <p>You need to be aware of the things you won't get for free and have answers.</p>
               <p>CDN becomes interesting - all performance elements become interesting</p>
               <p>Can be difficult for editorial production teams to see the connections initially</p>
               <p>Authoring is abstracted - wysiwyg work and media integration especially.</p>
             </aside>
           </section>
           <section>
+            <h2>Drupal as content provider - challenges</h2>
             <ul>
-              <li>Understand what you are giving up and have answers: routing, previewing among others</li>
-              <li>Specialized performance needs</li>
+              <li>Known unknowns - understand where you are drawing your boundaries</li>
+              <li>Specialized resource delivery needs</li>
               <li>Be prepared for questions and training</li>
             </ul>
           </section>
@@ -654,13 +653,16 @@
             <h2 class="static-title">The timeline, the approach hid something surprising, something unusual...</h2>
             <div class="col-three">
               <div class="col first centered">
-                <p>Approach</p>
+                <h4>Approach =></h4>
+                <p>Decoupled</p>
               </div>
               <div class="col middle centered">
-                <p>Synergy</p>
+                <h4>Synergy:</h4>
+                <p>Strong Asynchronous Workflow</p>
               </div>
               <div class="col last centered">
-                <p>Deadline</p>
+                <h4><= Deadline</h4>
+                <p>Fast and Looming</p>
               </div>
             </div>
             <aside class="notes">
@@ -696,6 +698,7 @@
         </section>
 
         <section>
+          <h2>Questions?</h2>
           <aside class="notes">
           <p>We're done! Questions?</p>
           </aside>
