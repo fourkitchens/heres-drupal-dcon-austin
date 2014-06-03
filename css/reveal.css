@@ -1284,7 +1284,7 @@ body {
 	background: rgba( 0, 0, 0, 0.6 );
 }
 .whiteout .reveal .state-background {
-	background: rgba( 255, 255, 255, 0.6 );
+	background: rgba( 255, 255, 255, 1.0 );
 }
 .cobalt .reveal .state-background {
 	background: rgba( 22, 152, 213, 0.6 );
